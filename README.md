@@ -22,3 +22,5 @@ See [holoinsight/agent](https://hub.docker.com/r/holoinsight/agent)
 
 # Licensing
 Holoinsight Agent is under [Apache License 2.0](/LICENSE).
+
+bad commit message
