@@ -40,6 +40,7 @@ jobs:
       with:
         pattern: '(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert|bump)(\(\S+\))?!?:(\s.*)'
         error: 'Must use conventional commits'
-        excludeTitle: 'true'
+        excludeTitle: 'false'
+        excludeDescription: 'true'
         checkAllCommitMessages: 'true'
         accessToken: ${{ secrets.GITHUB_TOKEN }} # github access token is only required if checkAllCommitMessages is true
