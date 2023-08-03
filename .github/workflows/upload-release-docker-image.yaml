@@ -1,0 +1,21 @@
+name: Upload release docker image
+
+on:
+  release:
+    types: [ published ]
+
+concurrency:
+  group: holoinsight-agent-upload-release-docker-image
+  cancel-in-progress: true
+
+jobs:
+  upload-release-docker-image:
+    runs-on: ubuntu-latest
+    steps:
+    - id: step1
+      run: echo "key1=value1" >> "$GITHUB_OUTPUT"
+    - name: run
+      shell: bash
+      run: |
+        echo ok
+    - run: env
